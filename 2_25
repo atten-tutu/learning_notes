@@ -1,1 +1,32 @@
+58-
+父组件改变子组件
+ref给组件打标识、
+子：defineExpose({toy,book}) 宏函数
+父:c1.value.toy
+$refs:值是对象，包含所有儿子（键值对？）
+refs[key].book+=3
+$parent:父传子,函数参数
+ 子调用，父暴露
+59
+reactive中有ref会自动解包(响应式对象)
+ref单独需要.value
+60
+provide inject祖孙传递
+爷：
+import {provide} from 'vue'
+provide('qian',money)
+孙：
+import {inject} from 'vue'
+inject('qian')
+//默认插槽，好丸
+category.vue(作为子组件),中的<slot></slot>可以插入自适应
+<category title="lalala"/>
+父传子，子组件defineprops
+<category>
 
+</category>
+//具名插槽
+<Category>
+ <template  v-slot:s2>
+v-slot在最后一个可以用#代替
+    标签
