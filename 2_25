@@ -24,6 +24,10 @@ category.vue(作为子组件),中的<slot></slot>可以插入自适应
 父传子，子组件defineprops
 <category>
 
+
+
+
+
 </category>
 //具名插槽
 <Category>
@@ -68,3 +72,28 @@ left:50%
 margin-left:-100px
 <teleport to='body'>
 </teleport>
+
+
+suspense
+axios
+import axios from 'axios'
+let{data:{content}} = await axios.get() promise实例
+子组件有异步任务
+import {Suspense} from 'vue'
+<suspense>
+<template v-slot:fallback>
+<Child />
+
+main.ts中:注册全局组件
+import
+app.component('hello',hello)
+
+全局变量app.config.globalproperties.x
+declare module 'vue'{
+interface 
+}
+
+注册全局指令
+v-beauty="sum"
+app.use:安装插件
+非兼容性改变：
