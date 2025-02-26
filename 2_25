@@ -30,3 +30,15 @@ category.vue(作为子组件),中的<slot></slot>可以插入自适应
  <template  v-slot:s2>
 v-slot在最后一个可以用#代替
     标签
+readonly:创建一个对象的深只读副本
+shallowreadonly:只作用于顶层，内部嵌套属性仍然可变
+
+
+toRaw：响应式对象的原始对象
+let person2 = toRaw(person):原始数据
+属性直接给
+对象给别人用，修改，但是不响应到页面上
+markraw:永远不会响应式
+丢失响应式
+
+
